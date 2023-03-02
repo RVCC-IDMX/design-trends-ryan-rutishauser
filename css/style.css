@@ -1,0 +1,39 @@
+@font-face{
+  font-family: 'Tilt Prism';
+  font-weight: 400;
+  src: url('fonts/tiltprism-regular-variablefont_xrotyrot-webfont.woff2') format('woff2'),
+       url('fonts/tiltprism-regular-variablefont_xrotyrot-webfont.woff') format('woff');
+}
+
+body{
+  background-color: hsl(0, 0%, 0%);
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 70vh 1fr;
+  display: grid;
+}
+
+.image{
+  width: 50vw;
+  grid-column: 1/2;
+  grid-row: span 2;
+  
+}
+
+.image2{
+  width: 50vw;
+  opacity: 0.6;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.text{
+  color: hsl(0, 0%, 100%);
+  font-family:  'Tilt Prism';
+  font-size: clamp(4rem, 3.6471rem + 1.8824vw, 6rem);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  z-index: 2;
+  @media only screen and(max-width: 1075px) {
+    grid-column: 1/3;
+  grid-row: 3/4;
+  }
+ }
